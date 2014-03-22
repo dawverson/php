@@ -18,6 +18,15 @@
 	}
 </style>
 <script type="text/javascript">
+window.onload=function(){
+
+<?php 
+	echo 'document.getElementById("pantalla").value = "'.$_GET['valor2'].'";';
+	//echo '<script> var jsNombre = "'.$phpNombre.'" document.write(jsNombre)</script>'; 
+?>
+
+}
+
 
 function agregar(valor){	
 	formulario.valor2.value = valor;
@@ -28,9 +37,9 @@ function agregar(valor){
 </head>
 <body>
 
-<form name="formulario" method="GET" action"calcular.php">
-	<input type="hidden" value="0" name="valor1"/>
-	<input type="hidden" value="0" name="valor2"/>
+<form name="formulario" method="GET" action"index.php">
+	<input type="hidden" value="2" name="valor1"/>
+	<input type="hidden" value="2" name="valor2"/>
 </form>
 
 <table>
